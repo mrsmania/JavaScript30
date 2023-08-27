@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Array Cardio 💪</title>
   <link rel="icon" href="https://fav.farm/✅" />
 </head>
+
 <body>
   <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
   <script>
@@ -45,6 +47,7 @@
     // Array.prototype.map()
     // 2. Give us an array of the inventor first and last names
     const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
+    
     console.log(fullNames);
 
     // Array.prototype.sort()
@@ -69,7 +72,7 @@
     console.log(totalYears);
 
     // 5. Sort the inventors by years lived
-    const oldest = inventors.sort(function(a, b) {
+    const oldest = inventors.sort(function (a, b) {
       const lastInventor = a.passed - a.year;
       const nextInventor = b.passed - b.year;
       return lastInventor > nextInventor ? -1 : 1;
@@ -98,7 +101,7 @@
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck', 'pogostick'];
 
-    const transportation = data.reduce(function(obj, item) {
+    const transportation = data.reduce(function (obj, item) {
       if (!obj[item]) {
         obj[item] = 0;
       }
@@ -110,4 +113,5 @@
 
   </script>
 </body>
+
 </html>
